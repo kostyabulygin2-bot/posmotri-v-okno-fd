@@ -16,6 +16,10 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 h1,
@@ -35,6 +39,96 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+/*** MAIN ***/
+.content {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  width: 1140px;
+  padding: 133px 30px 133px 30px;
+}
+
+/** СЕКЦИЯ С ВИДЕО И ФОРМОЙ **/
+.result {
+  padding-top: 78px;
+}
+
+.result__video-container {
+
+}
+
+.result__video {
+width: 100%;
+}
+
+/* ФОРМА */
+.search-form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.search-form__fieldset {
+
+}
+
+.search-form__label {
+
+}
+
+.search-form__label-text {
+
+}
+
+.search-form__textfield {
+
+}
+
+.search-form__checkbox-list {
+
+}
+
+.search-form__checkbox {
+
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.button {
+
+}
+
+.search-form__submit-button {
+
+}
+
+/* СЕКЦИЯ СО СКРОЛЛОМ */
+.content__details {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  margin-bottom: 26px;
+}
+
+.content__accent {
+
+}
+
+.content__list-container {
+  height: 298px;
+  overflow: scroll;
+}
+
+.content__list {
+
 }
 
 /* Кастомный скроллбар */
