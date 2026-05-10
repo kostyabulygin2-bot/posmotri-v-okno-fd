@@ -214,7 +214,7 @@ ol {
 
 .title {
   padding-top: 2px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   font-family: Oswald;
   font-weight: 700;
   font-style: bold;
@@ -229,6 +229,7 @@ ol {
 
 .content__list-container {
   width: 399px;
+  padding-top: 3px;
   overflow: scroll;
   display: flex;
   flex-direction: column;
@@ -241,9 +242,34 @@ ol {
   gap: 30px;
 }
 
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:has(.content__video-card-description-container:hover) {
+  text-decoration: underline;
+}
+
+.content__list-item:focus {
+  border: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #fff;
+}
+
 .content__card-link {
   text-decoration: none;
   color: #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card {
@@ -257,12 +283,10 @@ ol {
   width: 197px;
   object-fit: cover;
   object-position: center;
-  padding-right: 7px;
 }
 
 .content__video-card-description-container {
   flex-grow: 1;
-  padding-left: 2px;
   width: 193px;
 }
 
