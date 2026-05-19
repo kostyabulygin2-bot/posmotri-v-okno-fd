@@ -47,17 +47,16 @@ ol {
   align-items: flex-end;
   gap: 30px;
   width: 1140px;
-  height: 534px;
   margin: 133px 30px;
 }
 
 /** ОБЩИЕ СТИЛИ ЭЛЕМЕНТОВ **/
 .button {
+  min-height: 34px;
   background-color: transparent;
   border: 1px solid #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
   line-height: 100%;
   text-align: center;
@@ -145,6 +144,7 @@ ol {
 
 .search-form__textfield {
   background-color: transparent;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -201,20 +201,19 @@ ol {
   opacity: 1;
 }
 
-.search-form__label:has(.search-form__checkbox:focus-visible){
+.search-form__label:has(:focus-visible){
   outline: 1px solid #fff;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
 
 /** СЕКЦИЯ СО СКРОЛЛОМ **/
 .content__details {
   width: 100%;
-  height: 100%;
+  height: 534px;
 }
 
 .title {
@@ -233,9 +232,10 @@ ol {
 }
 
 .content__list-container {
+  height: 298px;
   width: 399px;
   padding-top: 3px;
-  overflow: scroll;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -252,16 +252,12 @@ ol {
   padding-right: 3px;
 }
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
-.content__list-item:has(.content__video-card-description-container:hover) {
+.content__card-link:has(.content__video-card-description-container:hover) {
   text-decoration: underline;
-}
-
-.content__list-item:focus {
-  border: none;
 }
 
 .content__list-item:focus-visible {
@@ -269,6 +265,7 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
 }
@@ -308,6 +305,8 @@ ol {
 }
 
 .content__video-card-description {
+  height: 17px;
+  width: 196px;
   margin-top: 6px;
   font-weight: 400;
   font-size: 18px;
@@ -316,11 +315,12 @@ ol {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .more-button {
   width: 100%;
-  height: 34px;
 }
 
 /** Кастомный скроллбар **/
