@@ -220,7 +220,7 @@ ol {
 .title {
   padding-top: 2px;
   margin-bottom: 21px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -308,10 +308,11 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  line-clamp: 1;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
 }
 
 .more-button {
